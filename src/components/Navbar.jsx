@@ -11,12 +11,12 @@ const Navbar = () => {
 
   return (
       <nav className='lg:px-[100px] px-[25px] flex justify-between items-center py-[20px] lg:py-[30px] bg-primary'>
-        <ul className='font-satisfy font-vb text-secondary text-[30px] leading-[36px] lg:ml-0 ml-[20px] animate-pulse animate-ping'>
+        <ul className='font-satisfy font-vb text-secondary text-[30px] leading-[36px] lg:ml-0 ml-[20px]'>
           <li><Link to='/'>david abolade</Link></li>
         </ul>
 
         <ul className='hidden lg:flex gap-x-[46px] text-white text-[14px] leading-[17px] font-m'>
-          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/about'>About Me</Link></li>
           <li><Link to='/projects'>Projects</Link></li>
           <li><Link to='/blog'>Blog</Link></li>
           <li><Link to='/contact'>Contact Me</Link></li>
@@ -44,8 +44,8 @@ const Navbar = () => {
             className='animate-ping'
         />
 
-        <ul className={`${toggle ?'lg:flex' : 'hidden'} gap-x-[46px] text-white text-[25px] leading-[35px] font-m absolute right-0 top-20 text-right w-2/5 mr-[25px] gap-10`}>
-          <li className='mb-3'><Link to='/about'>About</Link></li>
+        <ul className={`${toggle ?'lg:flex' : 'hidden'} gap-x-[46px] text-white text-[25px] leading-[35px] font-m absolute right-0 top-20 text-right w-2/5 mr-[25px] gap-10 transition-transform ease-linear delay-1000 duration-1000`}>
+          <li className='mb-3'><Link to='/about'>About Me</Link></li>
           <li className='mb-3'><Link to='/projects'>Projects</Link></li>
           <li className='mb-3'><Link to='/blog'>Blog</Link></li>
           <li className='mb-3'><Link to='/contact'>Contact Me</Link></li>

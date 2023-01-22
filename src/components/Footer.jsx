@@ -4,7 +4,7 @@ import {SiGmail, SiGithub} from "react-icons/si"
 
 const Footer = () => {
   return (
-    <footer className='w-full px-sp py-[35px] absolute bottom-0 flex flex-col justify-end items-end text-white gap-x-5'>
+    <footer className='w-full px-sp my-4 lg:my-4 md:absolute bottom-0 flex flex-col justify-end items-center text-white gap-x-5'>
       <div className='flex justify-center items-center pb-2'>
         <p className='text-[20px] mr-2'><FaCopyright /></p>
         <p className='text-[16px] leading-[29px]'>2022 David Abolade</p>
