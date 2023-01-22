@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <main className=' flex justify-between items-center px-[100px] py-[20px] my-[100px]'>
+    <main className=' flex justify-between items-center px-[100px] py-[20px] my-[100px ]'>
       <div className='text-white font-lobster text-[75px] leading-[90px] font-n'>
         <p>Hi,</p>
         <p>I am <span className='font-pacifico font-vb text-secondary text-[100px] leading-[120px]'>d</span>avid,</p>

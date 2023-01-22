@@ -1,23 +1,64 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, Outlet } from "react-router-dom";
+import { Sling as Hamburger } from 'hamburger-react'
+import { motion, AnimatePresence } from "framer-motion"
 
-// import Footer from './components/Footer'
+
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false)
+
 
   return (
-      <nav className='px-[100px] flex justify-between items-center py-[30px] bg-primary'>
-        <ul className='font-satisfy font-vb text-secondary text-[30px] leading-[36px]'>
+      <nav className='lg:px-[100px] px-[25px] flex justify-between items-center py-[20px] lg:py-[30px] bg-primary'>
+        <ul className='font-satisfy font-vb text-secondary text-[30px] leading-[36px] lg:ml-0 ml-[20px] animate-pulse animate-ping'>
           <li><Link to='/'>david abolade</Link></li>
         </ul>
 
-        <ul className='flex gap-x-[46px] text-white text-[14px] leading-[17px] font-m'>
+        <ul className='hidden lg:flex gap-x-[46px] text-white text-[14px] leading-[17px] font-m'>
           <li><Link to='/about'>About</Link></li>
           <li><Link to='/projects'>Projects</Link></li>
           <li><Link to='/blog'>Blog</Link></li>
           <li><Link to='/contact'>Contact Me</Link></li>
           <li><a href="#">Resume</a></li>  
-        </ul>
+      </ul>
+      
+      <AnimatePresence>
+       <motion.div
+        className='lg:hidden flex flex-col items-center'
+        initial={{ opacity: 0}}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
+        <Hamburger
+          size={25}
+          toggled={toggle}
+          toggle={setToggle}
+          direction="right"
+          duration={0.5}
+          distance="lg" 
+          easing="ease-in"
+          rounded
+          label="Show menu"
+          hideOutline={false}
+            color="#ffffff"
+            className='animate-ping'
+        />
+
+        <ul className={`${toggle ?'lg:flex' : 'hidden'} gap-x-[46px] text-white text-[25px] leading-[35px] font-m absolute right-0 top-20 text-right w-2/5 mr-[25px] gap-10`}>
+          <li className='mb-3'><Link to='/about'>About</Link></li>
+          <li className='mb-3'><Link to='/projects'>Projects</Link></li>
+          <li className='mb-3'><Link to='/blog'>Blog</Link></li>
+          <li className='mb-3'><Link to='/contact'>Contact Me</Link></li>
+          <li className='mb-3'><a href="#">Resume</a></li>  
+      </ul>
+
+      </motion.div> 
+      </AnimatePresence>
+      
+
+
+
+       
         <Outlet />
       </nav>
   )
