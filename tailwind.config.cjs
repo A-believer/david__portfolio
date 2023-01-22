@@ -18,8 +18,9 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        pacifico: ['Pacifico', 'cursive'],
-        poppins: ['Poppins', 'sans-serif']
+        lobster: ['Lobster', 'cursive'],
+        poppins: ['Poppins', 'sans-serif'],
+        satisfy: ['Satisfy', 'cursive']
       },
       fontWeight: {
         n: "400",

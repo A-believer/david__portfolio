@@ -4,9 +4,8 @@ import Footer from '../components/Footer'
 
 const Hero = () => {
   return (
-    <main>
+    <main className='block mt-10'>
       Hero
-      <Footer/>
     </main>
   )
 }
