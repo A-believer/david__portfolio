@@ -5,7 +5,6 @@ const Projects = () => {
   return (
     <div>
       Projects
-      <Footer/>
     </div>
   )
 }

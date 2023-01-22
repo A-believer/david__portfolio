@@ -5,7 +5,6 @@ const Blog = () => {
   return (
     <div>
       Blog
-      <Footer/>
     </div>
   )
 }
