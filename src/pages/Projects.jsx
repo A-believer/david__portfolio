@@ -1,7 +1,13 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
-export const Projects = () => {
+const Projects = () => {
   return (
-    <div>Projects</div>
+    <div>
+      Projects
+      <Footer/>
+    </div>
   )
 }
+
+export default Projects

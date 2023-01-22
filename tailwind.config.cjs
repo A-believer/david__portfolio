@@ -1,14 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+   mode: "JIT",
    content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  ], 
   theme: {
     screens: {
       md: '768px',
       lg: "1024px"
-    },
+    }, 
     extend: {
       colors: {
         primary: "#0F172A",
@@ -24,6 +25,9 @@ module.exports = {
         n: "400",
         m: "500",
         vb: "700"
+      },
+      padding: {
+        section_padding: "100px"
       }
     },
   },
