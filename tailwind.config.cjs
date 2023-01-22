@@ -28,7 +28,7 @@ module.exports = {
         vb: "700"
       },
       padding: {
-        section_padding: "100px"
+        sp: "100px"
       }
     },
   },
