@@ -16,11 +16,11 @@ const Navbar = () => {
         </ul>
 
         <ul className='hidden lg:flex gap-x-[46px] text-white text-[14px] leading-[17px] font-m'>
-          <li><Link to='/about'>About Me</Link></li>
-          <li><Link to='/projects'>Projects</Link></li>
-          <li><Link to='/blog'>Blog</Link></li>
-          <li><Link to='/contact'>Contact Me</Link></li>
-          <li><a href="#">Resume</a></li>  
+          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/about'>About Me</Link></li>
+          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/projects'>Projects</Link></li>
+          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/blog'>Blog</Link></li>
+          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/contact'>Contact Me</Link></li>
+          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><a href="#">Resume</a></li>  
       </ul>
       
       <AnimatePresence>

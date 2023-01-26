@@ -3,9 +3,10 @@ import Footer from '../components/Footer'
 
 const Blog = () => {
   return (
-    <div>
-      Blog
-    </div>
+    <section>
+      <Subheading text="Blog" />
+      <div className="flex justify-center items-center">Coming Soon...</div>
+    </section>
   )
 }
 

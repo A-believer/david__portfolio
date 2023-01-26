@@ -1,13 +1,15 @@
 import React from 'react'
 import heroImg from "../assets/hero-img.png"
+import Subheading  from '../components/Subheading'
 
 
-const Contact = () => {
+const Contact = ({text}) => {
   return (
     <div className='flex justify-between items-center lg:px-[100px] px-[25px] text-white text-[20px]'>
       
       <form action='https://formsubmit.co/davedev1209@gmail.com' method='POST' className='flex flex-col w-full gap-y-4 gap-x-4 pr-0 md:pr-[100px] my-5'>
         
+        <Subheading text='Contact Me'/>
         <p className='text-center'>Do you have a job or a project?<br />Send Me A Message!</p>
         
         <label htmlFor="fname" className='underline decoration-secondary underline-offset-8'>Your Name</label>
