@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <main className='flex justify-between lg:px-[100px] px-[30px] md:py-[20px]'>
+    <main className='flex justify-between lg:px-[100px] px-[25px] md:py-[20px]'>
       <div className='text-white font-lobster md:text-[75px] text-[50px]  md:leading-[90px] leading-[70px]  font-n tracking-wider mt-10'>
         <p>Hi there!</p>
         <p>I am <span className='font-pacifico font-vb text-secondary md:text-[100px]  md:leading-[110px] text-[70px] leading-[75px] animate-pulse'>D</span>avid,</p>
