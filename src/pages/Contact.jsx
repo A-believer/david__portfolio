@@ -6,6 +6,7 @@ const Contact = () => {
   return (
     <div className='flex justify-between items-center lg:px-[100px] px-[25px]'>
       <form action='https://formsubmit.co/davedev1209@gmail.com.com' method='POST' className='flex flex-col'>
+        <p>Do you have a job or a project?</p>
         <p>Send Me A Message!</p>
        <label htmlFor="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..." />
