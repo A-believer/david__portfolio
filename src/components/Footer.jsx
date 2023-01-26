@@ -4,7 +4,7 @@ import {SiGmail, SiGithub} from "react-icons/si"
 
 const Footer = () => {
   return (
-    <footer className='w-full px-[30px] md:px-[100px] my-4 lg:my-4 md:absolute md:bottom-0 flex justify-between items-center text-white'>
+    <footer className='w-full px-[25px] md:px-[100px] my-4 lg:my-4 md:absolute md:bottom-0 flex justify-between items-center text-white'>
       <div className='flex gap-3 md:gap-10 text-[20px]'>
         <p className='hover:text-secondary hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-150 hover:animate-pulse'><a href="https://twitter.com/A_believer007" target="_blank"><FaTwitter /></a></p>
         
