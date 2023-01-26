@@ -6,17 +6,18 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <main className='flex justify-between items-center lg:px-[100px] px-[30px] sm:py-[20px] lg:mt-[20px] sm:mt-[20px]'>
-      <div className='text-white font-lobster text-[75px]  leading-[90px]  font-n tracking-wider mt-20'>
+    <main className='flex justify-between lg:px-[100px] px-[30px] md:py-[20px]'>
+      <div className='text-white font-lobster md:text-[75px] text-[50px]  md:leading-[90px] leading-[70px]  font-n tracking-wider mt-10'>
         <p>Hi there!</p>
-        <p>I am <span className='font-pacifico font-vb text-secondary text-[100px]  leading-[120px] animate-pulse'>d</span>avid,</p>
-        <p><span className='font-pacifico font-vb text-secondary text-[100px]  leading-[120px] '>W</span>eb <span className='font-pacifico font-vb text-secondary text-[100px]  leading-[120px]'>D</span>eveloper</p>
-        <p className='lg:w-full w-4/5 text-[16px] leading-[24px] text-[#cccccc] font-poppins mt-[20px] mb-[10px]'>Frontend Developer, Profficient and Efficicent with Mordern Web Technologies</p>
+        <p>I am <span className='font-pacifico font-vb text-secondary md:text-[100px]  md:leading-[110px] text-[70px] leading-[75px] animate-pulse'>d</span>avid,</p>
+        <p><span className='font-pacifico font-vb text-secondary md:text-[100px]  md:leading-[110px] text-[70px] leading-[75px] '>W</span>eb <span className='font-pacifico font-vb text-secondary md:text-[100px]  md:leading-[110px] text-[70px] leading-[75px]'>D</span>eveloper</p>
+        <p className='md:w-3/4 w-full text-[16px] leading-[24px] text-[#cccccc] font-poppins my-[20px] mb-[10px]'>Frontend Developer, Profficient and Efficicent with Mordern Web Technologies</p>
 
-        <div className='flex gap-x-4 lg:mb-8 mb-4 justify-center'>
-          <button className='text-[18px] leading-[22px] font-inter font-vb bg-secondary md:px-[50px] px-[30px] md:py-[20px] py-[10px] rounded-[5px]'><Link to='/projects' className='bg-secondary'>My Projects</Link></button>
+        <div className='flex gap-x-4 lg:mb-8 mb-4 justify-start'>
+          
+          <button className='text-[18px] leading-[22px] font-inter font-vb bg-secondary md:px-[50px] px-[30px] md:py-[20px] py-[10px] rounded-[5px] hover:translate-y-1 hover:scale-90 transition ease-in-out delay-150'><Link to='/projects' className='bg-secondary hover:text-primary'>My Projects</Link></button>
 
-          <button className='text-[18px] leading-[22px] font-inter font-vb bg-primary border border-secondary px-[50px] py-[20px] rounded-[5px]'><Link to='/about' className=''>My Skills</Link></button>
+          <button className='text-[18px] leading-[22px] font-inter font-vb bg-primary border border-secondary px-[50px] py-[20px] rounded-[5px] hover:text-secondary hover:translate-y-1 hover:scale-90 transition ease-in-out delay-150'><Link to='/about' className=''>My Skills</Link></button>
         </div>
         
       </div>
