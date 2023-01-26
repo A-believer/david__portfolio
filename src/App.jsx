@@ -20,6 +20,7 @@ const App = () => {
             <Route path='/contact' element={<Contact/>} />       
             <Route path='/blog' element={<Blog/>} />             
         </Routes>
+        <hr className='mx-[25px] md:mx-[100px] bg-secondary h-[2px]'/>
         <Footer/>
       </Router>
       
