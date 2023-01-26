@@ -4,8 +4,8 @@ import heroImg from "../assets/hero-img.png"
 
 const Contact = () => {
   return (
-    <div className='flex justify-between items-center lg:px-[100px] px-[25px]'>
-      <form action='https://formsubmit.co/davedev1209@gmail.com.com' method='POST' className='flex flex-col'>
+    <div className='flex justify-between items-center lg:px-[100px] px-[25px] text-secondary text-[20px]'>
+      <form action='https://formsubmit.co/davedev1209@gmail.com.com' method='POST' className='flex flex-col w-full'>
         <p>Do you have a job or a project?</p>
         <p>Send Me A Message!</p>
        <label htmlFor="fname">First Name</label>
@@ -264,7 +264,7 @@ const Contact = () => {
         <textarea id="subject" name="subject" placeholder="Write something..."></textarea>
         <button type="submit">Send Message</button>
       </form>
-      <div className='lg:flex hidden'>
+      <div className='lg:flex hidden w-full'>
         <img src={heroImg} alt="img" />
       </div>
     </div>
