@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from '../components/Footer'
+import Subheading from "../components/Subheading"
 
-const About = () => {
+const About = ({text}) => {
   return (
     <section className='mx-[25px] md:mx-[100px]'>
       <Subheading text="About" />
