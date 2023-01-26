@@ -11,13 +11,13 @@ const Contact = () => {
         <p className='text-center'>Do you have a job or a project?<br />Send Me A Message!</p>
         
         <label htmlFor="fname" className='underline decoration-secondary underline-offset-8'>Your Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..." className='placeholder:italic placeholder:text-secondary placeholder:text-[14px] pl-4 py-2 text-secondary border-b-2 border-l-2 outline-none mb-2' required/>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..." className='form-input placeholder:italic placeholder:text-secondary/30 placeholder:text-[14px] pl-4 py-2 text-secondary border-b-2 border-l-2 outline-none mb-2 bg-transparent border-r-0 border-t-0 border-secondary' required/>
         
         <label htmlFor="email" className='underline decoration-secondary underline-offset-8'>Your Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Your email..." className='placeholder:italic placeholder:text-secondary placeholder:text-[14px] pl-4 py-2 text-secondary border-b-2 border-l-2 outline-none mb-2' required/>
+        <input type="email" id="email" name="email" placeholder="Your email..." className='form-input placeholder:italic placeholder:text-secondary/30 placeholder:text-[14px] pl-4 py-2 text-secondary border-b-2 border-l-2 outline-none mb-2 bg-transparent border-r-0 border-t-0 border-secondary' required/>
         
         <label htmlFor="country" className='underline decoration-secondary underline-offset-8'>Your Country</label>
-        <select id="countries" name="countries" placeholder="Select your country..." className='italic text-[14px] pl-4 py-2 text-secondary border-b-2 border-l-2 outline-none mb-2' required>
+        <select id="countries" name="countries" placeholder="Select your country..." className='italic text-[14px] pl-4 py-2 text-secondary border-b-2 border-l-2 outline-none mb-2 form-select bg-transparent border-r-0 border-t-0 border-secondary' required>
           <option value="AF">Afghanistan</option>
           <option value="AX">Åland Islands</option>
           <option value="AL">Albania</option>
@@ -265,7 +265,7 @@ const Contact = () => {
         </select>
 
         <label htmlFor="subject" className='underline decoration-secondary underline-offset-8'>Subject</label>
-        <textarea id="subject" name="subject" rows="5" cols="50" placeholder="Write something..." className='placeholder:italic italic text-[14px] placeholder:text-secondary placeholder:text-[14px] pl-4 py-2 text-secondary border-b-2 border-l-2 outline-none mb-2 resize-none' required></textarea>
+        <textarea id="subject" name="subject" rows="5" cols="50" placeholder="Write something..." className='placeholder:italic italic text-[14px] placeholder:text-secondary/30 placeholder:text-[14px] pl-4 py-2 text-secondary border-b-2 border-l-2 outline-none mb-2 resize-none form-textarea bg-transparent border-r-0 border-t-0 border-secondary' required></textarea>
 
         <button type="submit" className='my-4 w-3/5 mx-auto py-2 bg-secondary rounded-lg'>Send Message</button>
       </form>

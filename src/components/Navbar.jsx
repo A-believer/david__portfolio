@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
       <nav className='lg:px-[100px] px-[25px] flex justify-between items-center py-[17px] lg:py-[30px] bg-primary'>
-        <ul className='font-satisfy font-vb text-secondary text-[30px] leading-[36px] lg:ml-0 ml-[20px]'>
+        <ul className='font-satisfy font-vb text-secondary text-[30px] leading-[36px] lg:ml-0 ml-[20px] animate-pulse'>
         <li><Link to='/'>David Abolade</Link></li>
         </ul>
 
