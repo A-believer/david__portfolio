@@ -45,10 +45,10 @@ const Navbar = () => {
         />
 
         <ul className={`${toggle ?'lg:flex' : 'hidden'} gap-x-[46px] text-secondary text-[25px] leading-[35px] font-m absolute right-0 top-20 text-right w-2/5 mr-[25px] gap-10 transition-transform ease-linear delay-1000 duration-1000`}>
-          <li className='mb-3'><Link to='/about'>About Me</Link></li>
+          <li className='mb-3'><Link to='/about'>About</Link></li>
           <li className='mb-3'><Link to='/projects'>Projects</Link></li>
           <li className='mb-3'><Link to='/blog'>Blog</Link></li>
-          <li className='mb-3'><Link to='/contact'>Contact Me</Link></li>
+          <li className='mb-3'><Link to='/contact'>Contact</Link></li>
           <li className='mb-3'><a href="#">Resume</a></li>  
       </ul>
 
