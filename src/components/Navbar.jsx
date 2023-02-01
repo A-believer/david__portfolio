@@ -1,34 +1,59 @@
 import React, { useState } from 'react'
 import { Link, Outlet } from "react-router-dom";
 import { Sling as Hamburger } from 'hamburger-react'
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 
+const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 10 },
+  visible
+};
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
 
   return (
-      <nav className='lg:px-[100px] px-[25px] flex justify-between items-center py-[17px] lg:py-[30px] bg-primary'>
-        <ul className='font-satisfy font-vb text-secondary text-[30px] leading-[36px] lg:ml-0 ml-[20px] animate-pulse'>
-        <li><Link to='/'>David Abolade</Link></li>
-        </ul>
+    <motion.nav
+      initial="hidden"
+      animate="visible"
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+      variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+    
+      className='lg:px-[100px] px-[25px] flex justify-between items-center py-[17px] lg:py-[30px] bg-primary'>
+      <motion.p
+        variants={{
+          hidden: { opacity: 0, y: -20 },
+          visible
+          }}
+        className='font-satisfy font-vb text-secondary text-[28px] leading-[30px] lg:ml-0 ml-[20px] animate-pulse'><Link to='/'>David Abolade</Link></motion.p>
+       
 
         <ul className='hidden lg:flex gap-x-[46px] text-white text-[14px] leading-[17px] font-m'>
-          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/about'>About Me</Link></li>
-          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/projects'>Projects</Link></li>
-          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/blog'>Blog</Link></li>
-          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/contact'>Contact Me</Link></li>
-          <li className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><a href="#">Resume</a></li>  
+          <motion.li 
+          variants={itemVariants}
+          className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/about'>About Me</Link></motion.li>
+          <motion.li 
+          variants={itemVariants}
+          className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/projects'>Projects</Link></motion.li>
+          <motion.li 
+          variants={itemVariants}
+          className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/blog'>Blog</Link></motion.li>
+          <motion.li 
+          variants={itemVariants}
+          className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><Link to='/contact'>Contact Me</Link></motion.li>
+          <motion.li 
+          variants={itemVariants}
+          className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] '><a href="#">Resume</a></motion.li>  
       </ul>
       
-      <AnimatePresence>
-       <motion.div
+      
+      <motion.div
+        variants={itemVariants} 
         className='lg:hidden flex flex-col items-center'
-        initial={{ opacity: 0}}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}>
+    >
         <Hamburger
           size={25}
           toggled={toggle}
@@ -44,20 +69,20 @@ const Navbar = () => {
             className='animate-ping'
         />
 
-        <ul 
+        <motion.ul
+         
         onClick={() => setToggle(false)}
-        className={`${toggle ?'lg:flex' : 'hidden'} gap-x-[46px] text-secondary text-[25px] leading-[35px] font-m absolute right-0 top-20 text-right w-2/5 mr-[25px] gap-10 transition-transform ease-linear delay-1000 duration-1000`}>
+        className={`${toggle ?'lg:flex' : 'hidden'} text-secondary text-[25px] leading-[35px] font-m absolute right-0 top-20 w-2/5 mr-[5px]`}>
           <li className='mb-3'><Link to='/about'>About</Link></li>
           <li className='mb-3'><Link to='/projects'>Projects</Link></li>
           <li className='mb-3'><Link to='/blog'>Blog</Link></li>
           <li className='mb-3'><Link to='/contact'>Contact</Link></li>
           <li className='mb-3'><a href="#">Resume</a></li>  
-      </ul>
+      </motion.ul>
 
       </motion.div> 
-      </AnimatePresence>
         <Outlet />
-      </nav>
+      </motion.nav>
   )
 }
 
