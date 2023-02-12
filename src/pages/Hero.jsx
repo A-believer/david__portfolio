@@ -16,10 +16,12 @@ const Hero = () => {
             words={['Web Developer,', 'Software Engineer,', 'Problem Solver!']}
             loop={10}
             cursor
-            cursorStyle='|'
+            cursorStyle='_'
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1000}
+            
+            
           />
         </p>
         <p className='capitalize md:w-3/5 w-full text-[16px] leading-[24px] text-[#cccccc] font-poppins my-[20px] mb-[10px]'>
@@ -28,7 +30,7 @@ const Hero = () => {
             words={['Front-End Developer, Profficient and Efficient with modern Web Technologies!']}
             loop={1}
             cursor
-            cursorStyle=' '
+            cursorStyle=''
             typeSpeed={75}
             deleteSpeed={55}
             delaySpeed={1000}
@@ -43,7 +45,7 @@ const Hero = () => {
         </div>
         
       </div>
-      <div className='xl:w-[498px] xl:h-[388px] lg:w-[400px] lg:h-[300px] lg:block hiddenm mx-auto'>
+      <div className='xl:w-[498px] xl:h-[388px] lg:w-[400px] lg:h-[300px] lg:block hidden mx-auto'>
         <img src={heroImg} alt="hero_img" className='w-full'/>
       </div>
     </main>

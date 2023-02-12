@@ -22,7 +22,7 @@ const Navbar = () => {
       exit={{ opacity: 0, transition: { duration: 1 } }}
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
     
-      className='lg:px-[100px] px-[25px] flex justify-between items-center py-[17px] lg:py-[30px] bg-primary'>
+      className='lg:px-[100px] px-[25px] flex justify-between items-center pt-[17px] lg:pt-[30px] bg-primary z-10 shadow-lg shadow-grey-900'>
       <motion.p
         variants={{
           hidden: { opacity: 0, y: -20 },
@@ -70,13 +70,16 @@ const Navbar = () => {
         />
 
         <motion.ul
-         
         onClick={() => setToggle(false)}
-        className={`${toggle ?'lg:flex' : 'hidden'} text-secondary text-[25px] leading-[35px] font-m absolute right-0 top-20 w-2/5 mr-[5px]`}>
+        className={`${toggle ?'lg:flex' : 'hidden'} px-5 text-center text-secondary text-[25px] leading-[35px] font-m absolute right-0 top-20 w-2/5 mr-[5px]`}>
           <li className='mb-3'><Link to='/about'>About</Link></li>
+          <hr className='bg-white h-[2px] border-0'/>
           <li className='mb-3'><Link to='/projects'>Projects</Link></li>
+          <hr className='bg-white h-[2px] border-0'/>
           <li className='mb-3'><Link to='/blog'>Blog</Link></li>
+          <hr className='bg-white h-[2px] border-0'/>
           <li className='mb-3'><Link to='/contact'>Contact</Link></li>
+          <hr className='bg-white h-[2px] border-0'/>
           <li className='mb-3'><a href="#">Resume</a></li>  
       </motion.ul>
 

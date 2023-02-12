@@ -6,7 +6,6 @@ import pro5 from "./img5.png"
 import pro6 from "./img6.png"
 import pro7 from "./img7.png"
 import pro8 from "./img8.png"
-import pro9 from "./img9.png"
 
 const proData = [
     {
