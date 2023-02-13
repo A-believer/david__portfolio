@@ -14,12 +14,12 @@ const proData = [
     img: pro1,
     link: "https://random-quotes-app-pi.vercel.app/",
     tags: {
-        1: "HTML",
-        2: "CSS",
-        3: "Javascript",
-        4: "React"
+        1: "html5",
+        2: "css",
+        3: "javascript",
+        4: "react"
     },
-    about: "This website gives random advice at the click of a button. The advices are gotten from an api."
+    info: "This website gives random advice at the click of a button. The advices are gotten from an api."
     },
 {
     id: 2,
@@ -27,14 +27,14 @@ const proData = [
     img: pro2,
     link: "https://my-modern-bank-app.vercel.app/",
     tags: {
-        1: "HTML",
-        2: "CSS",
-        3: "Javascript",
-        4: "Vite",
-        5: "React",
-        6: "Tailwindcss"
+        1: "html5",
+        2: "css",
+        3: "javascript",
+        4: "vite",
+        5: "react",
+        6: "tailwindcss"
     },
-    about: "A fully responsive modern bank landing page. Featuring gradients and beautiful tailwind effects"
+    info: "A fully responsive modern bank landing page. Featuring gradients and beautiful tailwind effects"
     },
 {
     id: 3,
@@ -42,10 +42,11 @@ const proData = [
     img: pro3,
     link: "https://my-netflix-clone-nine.vercel.app/",
     tags: {
-        1: "HTML",
-        2: "Tailwindcss"
+        1: "html5",
+        2: "css",
+        3: "tailwindcss"
     },
-    about: "A simple clone of the netflix landing page built from scratch."
+    info: "A simple clone of the netflix landing page built from scratch."
     },
 {
     id: 4,
@@ -53,12 +54,12 @@ const proData = [
     img: pro4,
     link: "https://gpt3-app-one.vercel.app/",
     tags: {
-        1: "HTML",
-        2: "CSS",
+        1: "html5",
+        2: "css",
         3: "BEM",
-        4: "React",
+        4: "react",
     },
-    about: "A template web-app highlighting the uses of Open AI."
+    info: "A template web-app highlighting the uses of Open AI."
     },
 {
     id: 5,
@@ -66,12 +67,12 @@ const proData = [
     img: pro5,
     link: "https://my-gericht-restaurant.netlify.app/",
     tags: {
-        1: "HTML",
-        2: "CSS",
-        3: "Javascript",
-        4: "React"
+        1: "html5",
+        2: "css",
+        3: "javascript",
+        4: "react"
     },
-    about: "A simple but restaurant website with section for food and drinks. "
+    info: "A simple but restaurant website with section for food and drinks. "
     },
 {
     id: 6,
@@ -79,12 +80,12 @@ const proData = [
     img: pro6,
     link: "https://team-member-alloaction-app.vercel.app/",
     tags: {
-        1: "HTML",
-        2: "CSS",
-        3: "Javascript",
-        4: "React"
+        1: "html5",
+        2: "css",
+        3: "javascript",
+        4: "react"
     },
-    about: "This website illustrates how to group a company's employees into different teams efficiently."
+    info: "This website illustrates how to group a company's employees into different teams efficiently."
     },
 {
     id: 7,
@@ -92,12 +93,12 @@ const proData = [
     img: pro7,
     link: "https://recipe-app-seven-psi.vercel.app/",
     tags: {
-        1: "HTML",
-        2: "CSS",
-        3: "Javascript",
-        4: "React"
+        1: "html5",
+        2: "css",
+        3: "javascript",
+        4: "react"
     },
-    about: "This webapp show different meals and how they are made. If you are sure on which meal click the 'suprise me!' button for a random meal. The meals are fetched from an api."
+    info: "This webapp show different meals and how they are made. If you are sure on which meal click the 'suprise me!' button for a random meal. The meals are fetched from an api."
     },
 {
     id: 8,
@@ -105,11 +106,11 @@ const proData = [
     img: pro8,
     link: "http://fm-interactive-rating-component-one.vercel.app/",
     tags: {
-        1: "HTML",
-        2: "CSS",
-        3: "Javascript"
+        1: "html5",
+        2: "css",
+        3: "javascript"
     },
-    about: "This is my submission for the frontend mentor challenge. Simple but interactive"
+    info: "This is my submission for the frontend mentor challenge. Simple but interactive"
     },
 ]
 

@@ -21,8 +21,7 @@ const Navbar = () => {
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-    
-      className='lg:px-[100px] px-[25px] flex justify-between items-center pt-[17px] lg:pt-[30px] bg-primary z-10 shadow-lg shadow-grey-900'>
+      className='lg:px-[100px] px-[25px] flex justify-between items-center py-[17px] lg:py-[30px]  bg-primary z-10 shadow-lg shadow-grey-900'>
       <motion.p
         variants={{
           hidden: { opacity: 0, y: -20 },
