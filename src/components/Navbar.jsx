@@ -52,13 +52,13 @@ const Navbar = () => {
         <div
         onClick={() => setToggle(false)}
           className={`${toggle ? 'lg:flex' : 'hidden'} px-5 text-center text-white text-[25px] leading-[35px] font-m absolute left-0 top-[81px] w-full py-10`}>
-          <a href='#about' className='pb-5'>About</a>
+          <a href='#about' className='mb-5'>About</a>
           <hr className='bg-secondary h-[2px] border-0 mx-28 mb-10'/>
-          <a href='#projects' className='pb-5'>Projects</a>
+          <a href='#projects' className='mb-5'>Projects</a>
           <hr className='bg-secondary h-[2px] border-0 mx-28 mb-10'/>
-          <a href='#contact' className='pb-5'>Contact Me</a>
+          <a href='#contact' className='mb-5'>Contact Me</a>
           <hr className='bg-secondary h-[2px] border-0 mx-28 mb-10'/>
-          <a  href='https://drive.google.com/file/d/1PgmmVqsmeFdMzCl_-6YrZS_80YY2Ai5z/view?usp=drive_link'  className='pb-5' download target='_blank'>Resume</a> 
+          <a  href='https://drive.google.com/file/d/1PgmmVqsmeFdMzCl_-6YrZS_80YY2Ai5z/view?usp=drive_link'  className='mb-5' download target='_blank'>Resume</a> 
           <hr className='bg-secondary h-[2px] border-0 mx-28'/>
       </div>
       </div> 
