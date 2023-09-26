@@ -23,14 +23,6 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
         satisfy: ['Satisfy', 'cursive']
       },
-      fontWeight: {
-        n: "400",
-        m: "500",
-        vb: "700"
-      },
-      padding: {
-        sp: "100px"
-      }
     },
   },
   plugins: [

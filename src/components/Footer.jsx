@@ -19,7 +19,7 @@ const Footer = () => {
 
         <div className='flex justify-center items-center text-secondary lg:mx-5 mx-0'>
                 <p className='text-[20px] mr-2'><FaCopyright /></p>
-                <p className='text-[16px] leading-[29px]'>2022 David Abolade</p>
+                <p className='text-[16px] leading-[29px]'>2023 David Abolade</p>
         </div>
       </div>
      

@@ -1,11 +1,35 @@
 import React from 'react'
-import heroImg from "../assets/hero-img.png"
 import Subheading  from '../components/Subheading'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 }
+};
+
+const Contact = ({ text }) => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
 
 
-const Contact = ({text}) => {
   return (
-    <div className='flex justify-between items-center lg:px-[100px] px-[25px] text-white text-[20px]'>
+    <motion.section
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+      id='contact'
+      className='flex justify-between items-center lg:px-[100px] px-[25px] text-white text-[20px]'>
       
       <form action='https://formsubmit.co/davedev1209@gmail.com' method='POST' className='flex flex-col w-full gap-y-4 gap-x-4 pr-0 md:pr-[100px] my-5'>
         
@@ -271,11 +295,7 @@ const Contact = ({text}) => {
 
         <button type="submit" className='my-4 w-3/5 mx-auto py-2 bg-secondary rounded-lg'>Send Message</button>
       </form>
-
-      <div className='lg:flex hidden w-full'>
-        <img src={heroImg} alt="img" />
-      </div>
-    </div>
+    </motion.section>
     
   )
 }

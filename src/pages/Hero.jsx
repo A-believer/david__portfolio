@@ -1,54 +1,55 @@
-import React from 'react'
-import heroImg from '../assets/hero-img.png'
-import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
+import heroImage from "../assets/david.jpg"
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 }
+};
 
 
 const Hero = () => {
-  return (
-    <main className='flex justify-between lg:px-[100px] px-[25px]'>
-      <div className='text-white font-lobster md:text-[75px] text-[50px]  md:leading-[90px] leading-[70px]  font-n tracking-wider mt-10'>
-        <p>Hi there!</p>
-        <p>I am <span className='font-pacifico font-vb text-secondary md:text-[100px]  md:leading-[110px] text-[70px] leading-[75px] animate-pulse'>D</span>avid,</p>
 
-        <p>
-           <Typewriter
-            words={['Web Developer,', 'Software Engineer,', 'Problem Solver!']}
-            loop={10}
+   const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
+
+  return (
+    <motion.section
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+      className='text-white lg:px-[100px] px-[40px] md:h-[80vh] h-screen flex flex-col items-center justify-center gap-y-2'>
+      <img src={heroImage} alt="profile picture" className='rounded-full w-40 h-40 border-4 border-secondary'/>
+      <h1 className='font-poppins font-bold md:text-4xl text-3xl mt-5 md:self-auto self-start'>Hi there, </h1>
+      <h1 className='font-poppins md:text-4xl text-2xl md:self-auto self-start'>My name is <span className='font-lobster text-secondary'>D</span>avid <span className='font-lobster text-secondary'>A</span>bolade</h1>
+
+      <p className='font-lobster md:text-4xl text-3xl md:self-auto self-start mb-2'>
+        <span>I am a </span>
+        <span className='text-secondary underline'>
+          <Typewriter
+            words={['Web Developer', 'Software Engineer', 'Problem Solver', 'Civil Engineer']}
+            loop={100}
             cursor
-            cursorStyle='_'
+            cursorStyle=''
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1000}
-            
-            
           />
-        </p>
-        <p className='capitalize md:w-3/5 w-full text-[16px] leading-[24px] text-[#cccccc] font-poppins my-[20px] mb-[10px]'>
-          
-          <Typewriter
-            words={['Front-End Developer, Profficient and Efficient with modern Web Technologies!']}
-            loop={1}
-            cursor
-            cursorStyle=''
-            typeSpeed={75}
-            deleteSpeed={55}
-            delaySpeed={1000}
-          />
-        </p>
-
-        <div className='flex gap-x-4 lg:mb-8 mb-4 justify-start'>
-          
-          <button className='text-[18px] leading-[22px] font-inter font-vb bg-secondary md:px-[50px] px-[25px] md:py-[20px] py-[8px] rounded-[5px] hover:translate-y-1 hover:scale-90 transition ease-in-out delay-150 shadow-lg'><Link to='/projects' className='bg-secondary hover:text-primary'>My Projects</Link></button>
-
-          <button className='text-[18px] leading-[22px] font-inter font-vb bg-primary border border-secondary px-[50px] py-[17px] rounded-[5px] hover:text-secondary hover:translate-y-1 hover:scale-90 transition ease-in-out delay-150 shadow-lg'><Link to='/about' className=''>My Skills</Link></button>
-        </div>
-        
-      </div>
-      <div className='xl:w-[498px] xl:h-[388px] lg:w-[400px] lg:h-[300px] lg:block hidden mx-auto'>
-        <img src={heroImg} alt="hero_img" className='w-full'/>
-      </div>
-    </main>
+        </span>
+      </p>   
+    </motion.section>
   )
 }
 
