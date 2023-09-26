@@ -23,8 +23,11 @@ const Navbar = () => {
           href='#contact'
           className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] bg-primary'>Contact Me</a>
         <a 
-          href='#'
-          className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] bg-primary'>Resume</a>  
+          href='https://drive.google.com/file/d/1PgmmVqsmeFdMzCl_-6YrZS_80YY2Ai5z/view?usp=drive_link'
+          className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] bg-primary'
+          download
+          target='_blank'
+        >Resume</a>  
       </div>
       
       
@@ -55,7 +58,7 @@ const Navbar = () => {
           <hr className='bg-secondary h-[2px] border-0 mx-28 mb-10'/>
           <a href='#contact' className='pb-5'>Contact Me</a>
           <hr className='bg-secondary h-[2px] border-0 mx-28 mb-10'/>
-          <a href="#"  className='pb-5'>Resume</a> 
+          <a  href='https://drive.google.com/file/d/1PgmmVqsmeFdMzCl_-6YrZS_80YY2Ai5z/view?usp=drive_link'  className='pb-5' download target='_blank'>Resume</a> 
           <hr className='bg-secondary h-[2px] border-0 mx-28'/>
       </div>
       </div> 
