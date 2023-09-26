@@ -12,7 +12,7 @@ const Navbar = () => {
         className='bg-primary font-satisfy font-vb text-secondary md:text-5xl text-3xl leading-[30px] lg:ml-0 ml-[20px] animate-pulse'>DA</p>
        
 
-      <div className='hidden lg:flex gap-x-[46px] text-white text-[14px] leading-[17px] font-m bg-primary'>
+      <div className='hidden lg:flex gap-x-[46px] text-white text-[28px] leading-[17px] font-m bg-primary font-poppins'>
         <a
           href='#about'
           className='hover:underline underline decoration-transparent hover:decoration-secondary underline-offset-[5px] bg-primary'>About</a>
